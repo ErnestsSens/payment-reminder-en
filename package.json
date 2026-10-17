@@ -1,0 +1,21 @@
+{
+  "name": "payment-reminder",
+  "version": "1.0.0",
+  "description": "Automated SMS reminder and escalation flow for overdue invoices (Google Sheets + Text2Reach + Discord)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dry-run": "node src/index.js --dry-run",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.0",
+    "libphonenumber-js": "^1.11.4"
+  }
+}
